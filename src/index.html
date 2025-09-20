@@ -5,9 +5,119 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <nav id="navbar">
+            <a href="#home" class="Team">Lakers</a>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#highlights">Highlights</a></li>                    
+                <li><a href="#parallax">Parallax</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#more">More</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="progress">
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <header>
+            <section id="home">
+                <h1 class="fade-in">Los Angeles Lakers</h1>
+                <p>Showtime Returns</p>
+                <p><a href="#about">Learn More</a></p>
+            </section>
+        </header>
+
+
+        <section id="about">
+            <h2>About</h2>
+            <div class="Text_in_About">
+                <p>
+                Founded in 1947, the Los Angeles Lakers are one of the most successful
+                franchises in NBA history, with a rich legacy of legendary players and
+                championship moments.
+                </p>
+                <p>
+                The team plays its home games at Crypto.com Arena in downtown Los
+                Angeles, a venue shared with other professional sports teams and known
+                for its vibrant atmosphere.
+                </p>
+                <p>
+                The Lakers' culture is defined by the “Showtime” era of fast-paced,
+                entertaining basketball, a strong sense of teamwork, and a relentless
+                pursuit of championships and excellence.
+                </p>
+            </div>
+        </section>
+
+        <section id="highlights">
+            <h2>Highlights</h2>
+            <div class="carousel">
+                <button class="nav_prev">Prev</button>
+                <div class="track">
+                    <img src="./assets/slide1.jpg" alt="Slide 1" />
+                    <img src="./assets/slide2.jpg" alt="Slide 2" />
+                    <img src="./assets/slide3.webp" alt="Slide 3" />
+                </div>
+                <button class="nav_next">Next</button>
+            </div>
+        </section>
+
+
+        <section id="parallax">
+            <h2 class="fade-in">Championship Legacy</h2>
+            <p>17 NBA Titles and Counting</p>
+        </section>
+
+
+        <section id="video">
+            <h2>Video</h2>
+                <video controls poster="./assets/home.jpg">
+                    <source src="./assets/video.mp4" type="video/mp4" />
+                </video>
+        </section>
+
+
+        <section id="more">
+            <h2>More</h2>
+            <p>
+                <button type="button" data-open-modal="#playerModal">Open Modal</button>
+            </p>
+        </section>
+
+
+        <div id="playerModal" class="modal">
+            <div class="modal-backdrop" data-close-modal></div>
+            <div class="modal-dialog">
+                <button class="modal-close" type="button" data-close-modal>×</button>
+                <h3>Player Details</h3>
+                <ul>
+                    <li>LeBron James - Forward</li>
+                    <li>Anthony Davis - Forward/Center</li>
+                    <li>Austin Reaves - Guard</li>
+                    <li>D'Angelo Russell - Guard</li>
+                    <li>Jarred Vanderbilt - Forward</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <footer id="contact">
+            <h2>Contact</h2>
+            <p>Follow the Lakers:</p>
+            <p>
+                <a href="https://www.nba.com/lakers" target="_blank">Official Website</a><br>
+                <a href="https://twitter.com/Lakers" target="_blank"><i class="fab fa-twitter"></i> Twitter </a> <br>
+                <a href="https://instagram.com/lakers" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </p>
+            <small> 2025 Lakers Fan Page</small>
+        </footer>
+        
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>
